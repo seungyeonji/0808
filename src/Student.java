@@ -8,7 +8,7 @@ public class Student {
 	
 	public Student() {}	//Default Constructor
 
-	public Student(String name, String hakbun, int kor, int eng, int mat, int edp) {		//Constructor
+	public Student(String hakbun, String name, int kor, int eng, int mat, int edp) {		//Constructor
 		this.name = name;
 		this.hakbun = hakbun;
 		this.kor = kor;
@@ -90,7 +90,8 @@ public class Student {
 		this.grade = grade;
 	}
 
-	//toString
+	
+	//toString 재정의
 	@Override
 	public String toString() {
 		return String.format("%-10s%10s%5d%5d%5d%5d\t\t%5d%8.2f%5c",
